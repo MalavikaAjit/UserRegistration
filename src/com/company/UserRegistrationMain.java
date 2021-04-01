@@ -32,9 +32,19 @@ public class UserRegistrationMain {
         System.out.println("Is the email valid? " + email.matches(pattern));
 
     }
+    public static void validatePhoneno() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter Phone number");
+        String phoneNo =scan.next();
+        String pattern = "^([+]\\d{2}[ ])?\\d{10}$";
+        System.out.println("phone no is " +phoneNo);
+        System.out.println("Is the phone no valid? " + phoneNo.matches(pattern));
+
+    }
     public static void main(String[] args) {
 	validateFirstName();
 	validateLastName();
 	validateEmail();
+	validatePhoneno();
 	}
 }
