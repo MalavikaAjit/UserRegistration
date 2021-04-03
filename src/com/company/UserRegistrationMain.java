@@ -9,7 +9,7 @@ public class UserRegistrationMain {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter first name");
         String firstName =scan.next();
-        String pattern = "^[A-Z]{1}[a-z]{3}$";
+        String pattern = "^[A-Z]{1}[a-z]{2,}$";
         System.out.println("first name is " +firstName);
         System.out.println("Is the First name valid? " + firstName.matches(pattern));
 
