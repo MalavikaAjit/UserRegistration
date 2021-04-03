@@ -9,7 +9,7 @@ public class UserRegistrationMain {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter first name");
         String firstName =scan.next();
-        String pattern = "^[A-Z]{1}[a-z]{3}$";
+        String pattern = "^[A-Z]{1}[a-z]{2,}$";
         System.out.println("first name is " +firstName);
         System.out.println("Is the First name valid? " + firstName.matches(pattern));
 
@@ -18,7 +18,7 @@ public class UserRegistrationMain {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter Last name");
         String lastName =scan.next();
-        String pattern = "^[A-Z]{1}[a-z]{3}$";
+        String pattern ="^[A-Z]{1}[a-z]{2,}$";
         System.out.println("last name is " +lastName);
         System.out.println("Is the Last name valid? " + lastName.matches(pattern));
 
@@ -27,7 +27,7 @@ public class UserRegistrationMain {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter email");
         String email =scan.next();
-        String pattern = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+        String pattern = "^[a-zA-Z0-9]+([.+_-]{0,1}+[a-zA-Z0-9])*+[@]+[a-zA-Z]+[.]+[a-zA-Z]{2,4}+([.]{1}+[a-zA-Z]{0,2})*";
         System.out.println("last name is " +email);
         System.out.println("Is the email valid? " + email.matches(pattern));
 
@@ -36,7 +36,7 @@ public class UserRegistrationMain {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter Phone number");
         String phoneNo =scan.next();
-        String pattern = "^([+]\\d{2}[ ])?\\d{10}$";
+        String pattern ="^([0-9]{2})[ ]([1-9]{1}[0-9]{9})$";
         System.out.println("phone no is " +phoneNo);
         System.out.println("Is the phone no valid? " + phoneNo.matches(pattern));
 
