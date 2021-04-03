@@ -45,7 +45,7 @@ public class UserRegistrationMain {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter password");
         String password =scan.next();
-        String pattern =  "^(.*[A-Z]{1,}[0-9]{1,}[A-Za-z0-9]{6,})$";
+        String pattern =  "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
         System.out.println("password is " +password);
         System.out.println("Is the password valid? " + password.matches(pattern));
 
