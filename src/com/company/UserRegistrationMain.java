@@ -28,7 +28,7 @@ public class UserRegistrationMain {
         System.out.println("Enter email");
         String email =scan.next();
         String pattern = "^[a-zA-Z0-9]+([.+-_][a-zA-Z0-9]+)*@[a-zA-z0-9]+.[a-zA-Z]{2}([.][a-zA-Z]{2,4}){0,1}$";
-        System.out.println("last name is " +email);
+        System.out.println("email is " +email);
         System.out.println("Is the email valid? " + email.matches(pattern));
 
     }
