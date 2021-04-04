@@ -26,12 +26,10 @@ public class UserRegistrationMain {
     }
     public static void validateEmail(ArrayList<String> emails) {
         String pattern = "^[a-zA-Z0-9]+([.+_-]{0,1}+[a-zA-Z0-9])*+[@]+[a-zA-Z]+[.]+[a-zA-Z]{2,4}+([.]{1}+[a-zA-Z]{0,2})*";
-       System.out.println("email is " +emails);
-
+        System.out.println("email is " +emails);
         for ( String email:emails) {
-            System.out.println("Is the email valid? " + email.matches(pattern));
+           System.out.println("Is the email valid? " + email.matches(pattern));
         }
-
     }
     public static void validatePhoneno() {
         Scanner scan = new Scanner(System.in);
@@ -58,26 +56,26 @@ public class UserRegistrationMain {
 	validatePassword();
 
 	ArrayList<String> emails = new ArrayList<String>();
-    emails.add("abc@yahoo.com");
-    emails.add("abc-100@yahoo.com");
-    emails.add("abc.100@yahoo.com");
-    emails.add("abc111@abc.com");
-    emails.add("abc-100@abc.net");
-    emails.add("abc.100@abc.com.au");
-    emails.add("abc@1.com");
-    emails.add("abc@gmail.com.com");
-    emails.add("abc");
-    emails.add("abc@.com.my");
-    emails.add("abc123@gmail.a");
-    emails.add("abc123@.com");
-    emails.add("abc123@.com.com");
-    emails.add(".abc@abc.com");
-    emails.add("abc()*@gmail.com");
-    emails.add("abc..2002@gmail.com");
-    emails.add("abc.@gmail.com");
-    emails.add("abc@gmail.com.1a");
-    emails.add("abc@gmail.com.aa.au");
-    validateEmail(emails);
-    }
+	emails.add("abc@yahoo.com");
+	emails.add("abc-100@yahoo.com");
+	emails.add("abc.100@yahoo.com");
+	emails.add("abc111@abc.com");
+	emails.add("abc-100@abc.net");
+	emails.add("abc.100@abc.com.au");
+	emails.add("abc@1.com");
+	emails.add("abc@gmail.com.com");
+	emails.add("abc");
+	emails.add("abc@.com.my");
+	emails.add("abc123@gmail.a");
+	emails.add("abc123@.com");
+	emails.add("abc123@.com.com");
+	emails.add(".abc@abc.com");
+	emails.add("abc()*@gmail.com");
+	emails.add("abc..2002@gmail.com");
+	emails.add("abc.@gmail.com");
+	emails.add("abc@gmail.com.1a");
+	emails.add("abc@gmail.com.aa.au");
+	validateEmail(emails);
+	}
 
 }
